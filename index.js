@@ -1,3 +1,7 @@
+yarn install
+
+
+
 const { Client, GatewayIntentBits } = require('discord.js');
 const { joinVoiceChannel } = require('@discordjs/voice');
 
