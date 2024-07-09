@@ -1,7 +1,5 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const { joinVoiceChannel } = require('@discordjs/voice');
-
-const { Client, GatewayIntentBits } = require('discord.js');
 const express = require('express');
 const app = express();
 
@@ -14,6 +12,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
 const client = new Client({ 
   intents: [
     GatewayIntentBits.Guilds, 
